@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Цифровой отчёт по рабочему пространству</title>
+  <style>
+    :root{
+      --bg:#f4f7fc; --card:#ffffff; --text:#18212f; --muted:#5f6b7a; --line:#dde6f0;
+      --primary:#2457d6; --primary2:#4f86ff; --soft:#ecf3ff; --green:#0f766e;
+      --shadow:0 14px 36px rgba(24,33,47,.10); --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif; color:var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(79,134,255,.18), transparent 30%),
+        radial-gradient(circle at left center, rgba(36,87,214,.10), transparent 28%),
+        linear-gradient(180deg,#f7faff 0%, #f2f5fb 100%);
+      line-height:1.58;
+    }
+    .wrap{max-width:1120px; margin:0 auto; padding:28px 18px 56px;}
+    .hero{
+      background:linear-gradient(135deg,#1f4ec9 0%, #3a76ff 100%);
+      color:#fff; border-radius:30px; padding:30px 28px; box-shadow:var(--shadow);
+      position:relative; overflow:hidden;
+    }
+    .hero:before{
+      content:""; position:absolute; right:-80px; bottom:-80px; width:240px; height:240px;
+      border-radius:50%; background:rgba(255,255,255,.10);
+    }
+    .hero:after{
+      content:""; position:absolute; right:18%; top:18px; width:120px; height:120px;
+      border-radius:50%; background:rgba(255,255,255,.08);
+    }
+    .eyebrow{
+      display:inline-block; padding:7px 12px; border-radius:999px;
+      background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.18);
+      font-size:13px; font-weight:700; letter-spacing:.02em; margin-bottom:14px;
+    }
+    h1{margin:0; font-size:clamp(30px,4vw,46px); line-height:1.08;}
+    .hero p{margin:14px 0 0; max-width:780px; font-size:17px; opacity:.98;}
+    .section{
+      margin-top:18px; background:var(--card); border-radius:var(--radius);
+      box-shadow:var(--shadow); border:1px solid #edf2f8; padding:24px 22px;
+    }
+    .section h2{margin:0 0 10px; font-size:26px; line-height:1.15;}
+    .lead{margin:0 0 14px; color:var(--muted); font-size:16px;}
+    .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:16px;}
+    .card{
+      border:1px solid var(--line); border-radius:20px; padding:18px 18px 16px; background:#fff;
+    }
+    .card h3{margin:0 0 8px; font-size:20px;}
+    .card p{margin:0 0 14px; color:var(--muted);}
+    .pill{
+      display:inline-block; background:#eef4ff; color:#2457d6; padding:6px 10px;
+      border-radius:999px; font-size:13px; font-weight:700; margin-bottom:10px;
+    }
+    .btns{display:flex; gap:10px; flex-wrap:wrap;}
+    .btn{
+      text-decoration:none; display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 16px; border-radius:14px; font-weight:700; transition:.2s ease;
+      border:1px solid transparent;
+    }
+    .btn.primary{background:linear-gradient(135deg,#2457d6 0%, #4f86ff 100%); color:#fff; box-shadow:0 10px 24px rgba(36,87,214,.20);}
+    .btn.secondary{background:#fff; color:var(--primary); border-color:#cfddfb;}
+    .btn:hover{transform:translateY(-1px);}
+    .note{
+      border-radius:18px; padding:16px 18px; border:1px solid #d6ebdf; background:#f1fcf6;
+    }
+    .note strong{color:var(--green);}
+    .footer{margin-top:18px; text-align:center; color:var(--muted); font-size:14px;}
+    @media (max-width:900px){ .grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Цифровой отчёт</div>
+      <h1>Аудит рабочего пространства и проект его улучшения</h1>
+      <p>Готовые отчёты и проектные решения по модернизации аудитории 6242, а также индивидуальные отчёты участников команды по своим рабочим местам.</p>
+    </section>
+
+    <section class="section">
+      <h2>Основные страницы</h2>
+      <p class="lead">Две ключевые страницы проекта: комплексный план закупок и организации пространства, а также персональные отчёты студентов.</p>
+      <div class="grid">
+        <div class="card">
+          <span class="pill">Проект</span>
+          <h3>Закупка оборудования и организация пространства аудитории 6242</h3>
+          <p>Полное проектное задание: выбор аудитории, команда, фотофиксация, смета, эргономика, серверный узел, зона отдыха и AI-визуализации будущего пространства.</p>
+          <div class="btns">
+            <a class="btn primary" href="Проект.html">Открыть проект</a>
+          </div>
+        </div>
+        <div class="card">
+          <span class="pill">Отчёт</span>
+          <h3>Отчёт</h3>
+          <p>Индивидуальные отчёты участников команды по своим рабочим местам. В данном разделе представлены отдельные отчёты Мурзахановой Вероники Аликовны и Фроловой Анастасии Николаевны.</p>
+          <div class="btns">
+            <a class="btn primary" href="Отчёты индивидуальные.html">Перейти к отчётам</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Проект по аудиту и модернизации рабочего пространства — 2026</div>
+  </div>
+</body>
+</html>
