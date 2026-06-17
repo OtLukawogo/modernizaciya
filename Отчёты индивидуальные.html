@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Выбор отчёта студента</title>
+  <style>
+    :root{
+      --bg:#f4f7fc; --card:#ffffff; --text:#18212f; --muted:#5f6b7a; --line:#dde6f0;
+      --primary:#ad1799; --primary2:#f330e9; --soft:#ecf3ff; --green:#d62d73; --warn:#9a6700;
+      --shadow:0 14px 36px rgba(24,33,47,.10); --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif; color:var(--text);
+      background:linear-gradient(180deg,#f7faff 0%, #f2f5fb 100%); line-height:1.58;
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 56px;}
+    .hero{
+      background:linear-gradient(135deg,#c91f82 0%, #d625b0 100%);
+      color:#fff; border-radius:28px; padding:28px 26px; box-shadow:var(--shadow);
+    }
+    .eyebrow{
+      display:inline-block; padding:7px 12px; border-radius:999px;
+      background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.18);
+      font-size:13px; font-weight:700; letter-spacing:.02em; margin-bottom:14px;
+    }
+    h1{margin:0; font-size:clamp(28px,4vw,42px); line-height:1.08;}
+    .hero p{margin:14px 0 0; max-width:860px; font-size:17px; opacity:.98;}
+    .nav{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+    .btn{
+      text-decoration:none; display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 16px; border-radius:14px; font-weight:700; transition:.2s ease;
+      border:1px solid transparent; cursor:pointer; background:#fff; color:#c91f6e;
+    }
+    .btn.secondary{background:rgba(255,255,255,.12); color:#fff; border-color:rgba(255,255,255,.20);}
+    .btn.primary{background:#fff; color:#c91f74;}
+    .section{
+      margin-top:18px; background:var(--card); border-radius:var(--radius);
+      box-shadow:var(--shadow); border:1px solid #edf2f8; padding:24px 22px;
+    }
+    h2{margin:0 0 10px; font-size:26px; line-height:1.15;}
+    .lead{margin:0 0 14px; color:var(--muted); font-size:16px;}
+    .grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+    .card{
+      border:1px solid var(--line); border-radius:24px; padding:22px; background:#fff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover{transform:translateY(-4px); box-shadow:0 20px 28px -12px rgba(0,0,0,0.15);}
+    .card h3{margin:0 0 12px; font-size:24px; color:var(--primary);}
+    .card p{margin:8px 0 16px; color:var(--muted); line-height:1.5;}
+    .badge{
+      display:inline-block; background:#eef4ff; color:#d6246e; padding:6px 12px;
+      border-radius:999px; font-size:13px; font-weight:700; margin-bottom:14px;
+    }
+    .btn-card{
+      background:linear-gradient(135deg,#d624a1 0%, #ea4fff 100%);
+      color:#fff; border:none; padding:10px 20px; border-radius:40px;
+      font-weight:600; text-decoration:none; display:inline-block;
+      transition:0.2s; margin-top:8px;
+    }
+    .btn-card:hover{opacity:0.9; transform:scale(1.02);}
+    .footer{margin-top:18px; text-align:center; color:var(--muted); font-size:14px;}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}}
+    @media print{
+      body{background:#fff}
+      .hero,.section{box-shadow:none}
+      .btn,.nav{display:none !important}
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Отчёт</div>
+    <h1>Аудит рабочего пространства и проект улучшения</h1>
+    <p>Выберите отчёт студента, чтобы посмотреть детальное исследование, фотографии и предложения по модернизации.</p>
+    <div class="nav">
+      <a class="btn" href="index.html">Главная страница</a>
+      <a class="btn secondary" href="Проект.html">Проект оборудования</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>📄 Отчёты участников проекта</h2>
+    <p class="lead">Каждый участник команды подготовил собственный отчёт с анализом своего рабочего места, визуализациями и личными выводами.</p>
+    <div class="grid">
+      <!-- карточка Мурзахановой -->
+      <div class="card">
+        <div class="badge">⭐ Индивидуальный отчёт</div>
+        <h3>Мурзаханова Вероника Аликовна</h3>
+        <p>Роль: <strong>дизайн, аудит, HTML</strong></p>
+        <a href="отчёт Мурзахановой.html" class="btn-card">📑 Открыть отчёт →</a>
+      </div>
+
+      <!-- карточка Фроловой -->
+      <div class="card">
+        <div class="badge">⭐ Индивидуальный отчёт</div>
+        <h3>Фролова Анастасия Николаевна</h3>
+        <p>Роль: <strong>смета, аудит, HTML, фото</strong></p>
+        <a href="отчёт Фроловой.html" class="btn-card">📑 Открыть отчёт →</a>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="footer">
+    Проект ИТ-инфраструктуры и организации рабочего пространства — 2026 | Страница выбора отчётов
+  </div>
+</div>
+</body>
+</html>

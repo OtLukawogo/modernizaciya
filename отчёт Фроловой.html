@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Отчёт Фроловой А.Н. — Аудит рабочего пространства</title>
+  <style>
+    :root{
+      --bg:#f4f7fc; --card:#ffffff; --text:#18212f; --muted:#5f6b7a; --line:#dde6f0;
+      --primary:#eb7323; --primary2:#c25106; --soft:#ecf3ff; --green:#f57812; --warn:#9a6700;
+      --shadow:0 14px 36px rgba(24,33,47,.10); --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:linear-gradient(180deg,#f7faff 0%, #f2f5fb 100%);line-height:1.58;}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 56px;}
+    .hero{background:linear-gradient(135deg,#fa8c0e 0%, #e76214 100%);color:#fff;border-radius:28px;padding:28px 26px;box-shadow:var(--shadow);}
+    .eyebrow{display:inline-block;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);font-size:13px;font-weight:700;letter-spacing:.02em;margin-bottom:14px;}
+    h1{margin:0;font-size:clamp(28px,4vw,42px);line-height:1.08;}
+    .hero p{margin:14px 0 0;max-width:860px;font-size:17px;opacity:.98;}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;}
+    .btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border-radius:14px;font-weight:700;transition:.2s ease;border:1px solid transparent;cursor:pointer;}
+    .btn.primary{background:#fff;color:#eb6e26;}
+    .btn.secondary{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.20);}
+    .section{margin-top:18px;background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);border:1px solid #edf2f8;padding:24px 22px;}
+    .section h2{margin:0 0 10px;font-size:26px;line-height:1.15;}
+    .lead{margin:0 0 14px;color:var(--muted);font-size:16px;}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    .card{border:1px solid var(--line);border-radius:18px;padding:16px;background:#fff;}
+    .card h3{margin:0 0 8px;font-size:19px;}
+    .report-text{
+      background:#fbfcfe;
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:12px 14px;
+      color:var(--text);
+      line-height:1.5;
+      white-space:pre-wrap;
+    }
+    .summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+    .sum-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;}
+    .sum-card strong{display:block;font-size:14px;color:var(--muted);}
+    .big{font-size:34px;font-weight:800;color:var(--primary);line-height:1;margin-top:8px;}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    .ph{
+      border:2px dashed #cfdcf0; border-radius:18px; min-height:220px; display:flex;
+      align-items:center; justify-content:center; color:var(--muted); text-align:center; padding:20px;
+      background:#fbfcfe;
+    }
+    .ph img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+    .note{border-radius:18px;padding:16px 18px;border:1px solid #d6ebdf;background:#f1fcf6;}
+    .note strong{color:var(--green);}
+    .footer{margin-top:18px;text-align:center;color:var(--muted);font-size:14px;}
+    @media (max-width:900px){.grid,.summary,.gallery{grid-template-columns:1fr;}}
+    @media print{
+      body{background:#fff}
+      .hero,.section{box-shadow:none}
+      .btn,.nav{display:none !important}
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Индивидуальный отчёт</div>
+    <h1>Аудит рабочего пространства и проект улучшения</h1>
+    <p>Отчёт содержит анализ текущего состояния рабочего места, результаты чек-листа, ключевые наблюдения и план улучшений. Данные собраны на основе реального использования пространства.</p>
+    <div class="nav">
+      <a class="btn primary" href="index.html">Главное меню</a>
+      <a class="btn secondary" href="Отчёты индивидуальные.html">Отчёты команды</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>1. Общая информация</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>ФИО / автор</h3>
+        <div class="report-text">Фролова Анастасия Николаевна</div>
+      </div>
+      <div class="card">
+        <h3>Объект анализа</h3>
+        <div class="report-text">Учебная аудитория ФЭМ №6235</div>
+      </div>
+    </div>
+    <div style="margin-top:14px;">
+      <h3>Назначение рабочего пространства</h3>
+      <div class="report-text">Учёба, работа с программами Microsoft (Word, Excel, PowerPoint, Visio).</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>2. Итоги чек-листа</h2>
+    <div class="summary">
+      <div class="sum-card"><strong>Набрано баллов</strong><div class="big">82</div></div>
+      <div class="sum-card"><strong>Максимум</strong><div class="big">92</div></div>
+      <div class="sum-card"><strong>Процент</strong><div class="big">89%</div></div>
+      <div class="sum-card"><strong>Результат</strong><div style="margin-top:8px; font-weight:700;">Рабочее место организовано грамотно и соответствует задачам</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>3. Ключевые наблюдения</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Сильные стороны</h3>
+        <div class="report-text">Целевое соответствие
+Надёжная система хранения данных
+Рациональный подход к закупкам</div>
+      </div>
+      <div class="card">
+        <h3>Проблемные зоны</h3>
+        <div class="report-text">Неудобная компоновка и дефицит пространства
+Низкая эргономичность
+Недостаток оперативной памяти</div>
+      </div>
+    </div>
+    <div style="margin-top:14px;">
+      <h3>Три улучшения с наибольшим эффектом</h3>
+      <div class="report-text">Увеличение оперативной памяти
+Реорганизация рабочего пространства (перестановка мебели, освобождение места под столом, перенос системного блока и обеспечение правильной глубины столешницы)
+Настройка эргономики монитора и кресла</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>4. Проект улучшения</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Что можно улучшить без существенных затрат</h3>
+        <div class="report-text">Настроить высоту монитора, освободить пространство под столом, организовать кабели, настроить параметры экрана.</div>
+      </div>
+      <div class="card">
+        <h3>Что потребует бюджета, но даст заметный эффект</h3>
+        <div class="report-text">Увеличение оперативной памяти, замена HDD на SSD, эргономичное кресло, регулируемая подставка или кронштейн для монитора, качественное настольное освещение, широкий коврик для мыши.</div>
+      </div>
+    </div>
+    <div style="margin-top:14px;">
+      <h3>Обоснование проекта</h3>
+      <div class="report-text">Предложенные улучшения устраняют ключевые «узкие места»: увеличение ОЗУ напрямую повышает производительность ПК при многозадачности, реорганизация пространства снижает физическую утомляемость и риск травм, а настройка эргономики экрана и кресла уменьшает нагрузку на зрение и позвоночник. Бесплатные меры (настройка ОС, уборка кабелей) дают быстрый эффект, а бюджетные вложения (ОЗУ, кронштейн, кресло) окупаются за счёт роста эффективности, сокращения больничных и продления срока службы техники. Такой подход соответствует принципу разумной достаточности и рациональной закупки.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>5. Визуальные материалы</h2>
+    <p class="lead">Реальные фотографии текущего состояния рабочего места.</p>
+    <div class="gallery">
+      <div class="ph"><img src="Комп Фроловой 1.jpg" alt="Фото рабочего места 1"></div>
+      <div class="ph"><img src="Комп Фроловой 2.jpg" alt="Фото рабочего места 2"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>6. Итоговый вывод</h2>
+    <div class="report-text">Рабочее пространство в целом соответствует базовым учебным задачам (работа с пакетом Microsoft Office), но имеет критические ограничения в эргономике, компоновке и объёме оперативной памяти, что снижает производительность и комфорт при длительной работе. Наиболее рациональными являются три улучшения: увеличение ОЗУ (максимальный прирост скорости за умеренные деньги), реорганизация пространства (снижение физической усталости без затрат) и настройка эргономики монитора/кресла (защита зрения и осанки). Внедрение этих мер позволит поднять общую эффективность рабочего места на 50-70% без полной замены оборудования.</div>
+    <div class="note" style="margin-top:14px;"><strong>Совет:</strong> хороший вывод должен соединять наблюдения, баллы, смысловые выводы и реальные предложения по улучшению.</div>
+  </section>
+
+  <div class="footer">Отчёт Фроловой Анастасии Николаевны, группа 6471</div>
+</div>
+</body>
+</html>
